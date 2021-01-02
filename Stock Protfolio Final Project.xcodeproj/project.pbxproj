@@ -14,6 +14,7 @@
 		CD54C83325A0E54700DD4511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
 		CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */; };
 		CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
+		CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CD54C83225A0E54700DD4511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD54C83425A0E54700DD4511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreenPresenter.swift; sourceTree = "<group>"; };
+		CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtfolioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
+				CD54C84425A1065100DD4511 /* Protfolio Module */,
 				CD54C82625A0E54100DD4511 /* AppDelegate.swift */,
 				CD54C82825A0E54100DD4511 /* SceneDelegate.swift */,
 				CD54C82C25A0E54100DD4511 /* Main.storyboard */,
@@ -90,6 +93,38 @@
 			isa = PBXGroup;
 			children = (
 				CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CD54C84425A1065100DD4511 /* Protfolio Module */ = {
+			isa = PBXGroup;
+			children = (
+				CD54C84525A1066F00DD4511 /* Model */,
+				CD54C84625A1067600DD4511 /* View */,
+				CD54C84725A1067D00DD4511 /* Presenter */,
+			);
+			path = "Protfolio Module";
+			sourceTree = "<group>";
+		};
+		CD54C84525A1066F00DD4511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD54C84625A1067600DD4511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD54C84725A1067D00DD4511 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -167,6 +202,7 @@
 			files = (
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
+				CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
 			);

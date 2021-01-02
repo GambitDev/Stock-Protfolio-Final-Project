@@ -86,7 +86,7 @@ extension LogInViewController: LogInPresenterDelegate {
     }
     
     func loginSuccessful() {
-        
+        performSegue(withIdentifier: ProtfolioViewController.segueIdentifier, sender: self)
     }
     
     func loginFailed() {
