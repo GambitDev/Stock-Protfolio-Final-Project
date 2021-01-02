@@ -72,6 +72,9 @@
                                     <action selector="registerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BkY-cn-ObF"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-bA-qKE">
+                                <rect key="frame" x="188.5" y="598.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -83,14 +86,17 @@
                             <constraint firstItem="fno-6H-2lV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MPb-my-xO9"/>
                             <constraint firstItem="0b4-CK-Tb1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VO8-bv-vmr"/>
                             <constraint firstItem="V32-x5-wHZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZEe-ys-1Ep"/>
+                            <constraint firstItem="XHh-bA-qKE" firstAttribute="top" secondItem="V32-x5-wHZ" secondAttribute="bottom" constant="15" id="jPj-Z6-ZdS"/>
                             <constraint firstItem="4cn-v8-8ae" firstAttribute="top" secondItem="0b4-CK-Tb1" secondAttribute="bottom" constant="170" id="kBq-Ry-393"/>
                             <constraint firstItem="abU-js-9dw" firstAttribute="top" secondItem="fno-6H-2lV" secondAttribute="bottom" constant="15" id="pax-YH-Iwv"/>
                             <constraint firstItem="abU-js-9dw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pib-Vr-2Lj"/>
+                            <constraint firstItem="XHh-bA-qKE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tpU-6b-U3P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="BYM-Zq-qIF"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="XHh-bA-qKE" id="R2R-qp-wcu"/>
                         <outlet property="logInButton" destination="fno-6H-2lV" id="vX2-Ba-eMg"/>
                         <outlet property="passwordTextField" destination="WIM-VD-tHl" id="o4B-nS-7aS"/>
                         <outlet property="registerButton" destination="V32-x5-wHZ" id="3og-yx-cgq"/>
