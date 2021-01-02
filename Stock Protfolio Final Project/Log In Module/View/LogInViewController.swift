@@ -29,6 +29,12 @@ class LogInViewController: UIViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        activityIndicatorView.alpha = 0
+    }
+    
     //MARK: - Actions
     @IBAction func logInButtonClicked(_ sender: UIButton) {
         guard let userName = usernameTextField.text, let password = passwordTextField.text else { return }
