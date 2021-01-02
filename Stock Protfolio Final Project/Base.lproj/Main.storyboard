@@ -10,7 +10,7 @@
         <!--Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stock_Protfolio_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="Stock_Protfolio_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,17 +95,17 @@
                         <outlet property="passwordTextField" destination="WIM-VD-tHl" id="o4B-nS-7aS"/>
                         <outlet property="registerButton" destination="V32-x5-wHZ" id="3og-yx-cgq"/>
                         <outlet property="usernameTextField" destination="eq7-hc-DJf" id="gb3-lm-wsl"/>
-                        <segue destination="ZhU-D7-04C" kind="show" identifier="logInSegueIdentifier" id="Aac-SM-v2F"/>
+                        <segue destination="ZhU-D7-04C" kind="show" identifier="protfolioSegueIdentifier" id="Aac-SM-v2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Protfolio View Controller-->
         <scene sceneID="LBn-7k-d3M">
             <objects>
-                <viewController id="ZhU-D7-04C" sceneMemberID="viewController">
+                <viewController id="ZhU-D7-04C" customClass="ProtfolioViewController" customModule="Stock_Protfolio_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zx5-Rw-UD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
