@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LogInViewController.swift
 //  Stock Protfolio Final Project
 //
 //  Created by Dan Gavrielov on 02/01/2021.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var usernameTextField: UITextField!
@@ -24,10 +24,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         configurePage()
+        presenter.delegate = self
     }
     
     //MARK: - Actions
     @IBAction func logInButtonClicked(_ sender: UIButton) {
+        guard let userName = usernameTextField.text, let password = passwordTextField.text else {
+            //no input error
+            return
+        }
+        presenter.login(userName: userName, password: password)
     }
     
     @IBAction func registerButtonClicked(_ sender: UIButton) {
@@ -59,6 +65,7 @@ class ViewController: UIViewController {
         
         alertController.addAction(UIAlertAction(title: "Register An Account", style: .default) { [weak self] action in
             guard let username = alertController.textFields?[0].text, let password = alertController.textFields?[1].text else {
+                //no input error
                 return
             }
             self?.presenter.registerNewUser(userName: username, password: password)
@@ -72,3 +79,17 @@ class ViewController: UIViewController {
     //MARK: System Methods
 }
 
+//MARK: - Extensions
+extension LogInViewController: LogInPresenterDelegate {
+    func noUserExist() {
+        
+    }
+    
+    func loginSuccessful() {
+        
+    }
+    
+    func loginFailed() {
+        
+    }
+}

@@ -12,8 +12,8 @@
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
 		CD54C83025A0E54700DD4511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82F25A0E54700DD4511 /* Assets.xcassets */; };
 		CD54C83325A0E54700DD4511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
-		CD54C83E25A0EEE000DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
 		CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */; };
+		CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,10 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
-				CD54C83E25A0EEE000DD4511 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
