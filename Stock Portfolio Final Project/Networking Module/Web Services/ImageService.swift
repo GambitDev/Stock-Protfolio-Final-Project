@@ -1,6 +1,6 @@
 //
 //  ImageService.swift
-//  Stock Protfolio Final Project
+//  Stock Portfolio Final Project
 //
 //  Created by Dan Gavrielov on 03/01/2021.
 //  Copyright © 2021 Dan Gavrielov. All rights reserved.

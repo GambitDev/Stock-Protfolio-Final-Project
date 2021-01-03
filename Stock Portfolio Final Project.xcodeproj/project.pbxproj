@@ -12,7 +12,7 @@
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
 		CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */; };
 		CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
-		CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */; };
+		CD54C84925A106A500DD4511 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* PortfolioViewController.swift */; };
 		CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2525A1F1EA00501046 /* ImageService.swift */; };
 		CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2A25A1F65000501046 /* CurrencyRates.swift */; };
 		CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD54C82325A0E54000DD4511 /* Stock Protfolio Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Protfolio Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54C82325A0E54000DD4511 /* Stock Portfolio Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Portfolio Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54C82625A0E54100DD4511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD54C82825A0E54100DD4511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CD54C82A25A0E54100DD4511 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +30,7 @@
 		CD54C83225A0E54700DD4511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD54C83425A0E54700DD4511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreenPresenter.swift; sourceTree = "<group>"; };
-		CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtfolioViewController.swift; sourceTree = "<group>"; };
+		CD54C84825A106A500DD4511 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		CDE04B2525A1F1EA00501046 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesService.swift; sourceTree = "<group>"; };
 		CDE04B2A25A1F65000501046 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		CD54C81A25A0E54000DD4511 = {
 			isa = PBXGroup;
 			children = (
-				CD54C82525A0E54000DD4511 /* Stock Protfolio Final Project */,
+				CD54C82525A0E54000DD4511 /* Stock Portfolio Final Project */,
 				CD54C82425A0E54000DD4511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		CD54C82425A0E54000DD4511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD54C82325A0E54000DD4511 /* Stock Protfolio Final Project.app */,
+				CD54C82325A0E54000DD4511 /* Stock Portfolio Final Project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD54C82525A0E54000DD4511 /* Stock Protfolio Final Project */ = {
+		CD54C82525A0E54000DD4511 /* Stock Portfolio Final Project */ = {
 			isa = PBXGroup;
 			children = (
 				CDE04B2025A1EF7500501046 /* Networking Module */,
@@ -75,7 +75,7 @@
 				CDE04B2F25A200F800501046 /* Supporting Files */,
 				CD54C83425A0E54700DD4511 /* Info.plist */,
 			);
-			path = "Stock Protfolio Final Project";
+			path = "Stock Portfolio Final Project";
 			sourceTree = "<group>";
 		};
 		CD54C83B25A0EE6F00DD4511 /* Log In Module */ = {
@@ -124,7 +124,7 @@
 		CD54C84625A1067600DD4511 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */,
+				CD54C84825A106A500DD4511 /* PortfolioViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD54C82225A0E54000DD4511 /* Stock Protfolio Final Project */ = {
+		CD54C82225A0E54000DD4511 /* Stock Portfolio Final Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD54C83725A0E54700DD4511 /* Build configuration list for PBXNativeTarget "Stock Protfolio Final Project" */;
+			buildConfigurationList = CD54C83725A0E54700DD4511 /* Build configuration list for PBXNativeTarget "Stock Portfolio Final Project" */;
 			buildPhases = (
 				CD54C81F25A0E54000DD4511 /* Sources */,
 				CD54C82025A0E54000DD4511 /* Frameworks */,
@@ -177,9 +177,9 @@
 			);
 			dependencies = (
 			);
-			name = "Stock Protfolio Final Project";
+			name = "Stock Portfolio Final Project";
 			productName = "Stock Protfolio Final Project";
-			productReference = CD54C82325A0E54000DD4511 /* Stock Protfolio Final Project.app */;
+			productReference = CD54C82325A0E54000DD4511 /* Stock Portfolio Final Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD54C81E25A0E54000DD4511 /* Build configuration list for PBXProject "Stock Protfolio Final Project" */;
+			buildConfigurationList = CD54C81E25A0E54000DD4511 /* Build configuration list for PBXProject "Stock Portfolio Final Project" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -210,7 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD54C82225A0E54000DD4511 /* Stock Protfolio Final Project */,
+				CD54C82225A0E54000DD4511 /* Stock Portfolio Final Project */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +237,7 @@
 				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
-				CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */,
+				CD54C84925A106A500DD4511 /* PortfolioViewController.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
 				CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
@@ -386,12 +386,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZA7J9MSR3;
-				INFOPLIST_FILE = "Stock Protfolio Final Project/Info.plist";
+				INFOPLIST_FILE = "Stock Portfolio Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gambit.Stock-Protfolio-Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gambit.Stock-Portfolio-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,12 +404,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZA7J9MSR3;
-				INFOPLIST_FILE = "Stock Protfolio Final Project/Info.plist";
+				INFOPLIST_FILE = "Stock Portfolio Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gambit.Stock-Protfolio-Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gambit.Stock-Portfolio-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,7 +419,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD54C81E25A0E54000DD4511 /* Build configuration list for PBXProject "Stock Protfolio Final Project" */ = {
+		CD54C81E25A0E54000DD4511 /* Build configuration list for PBXProject "Stock Portfolio Final Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD54C83525A0E54700DD4511 /* Debug */,
@@ -428,7 +428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD54C83725A0E54700DD4511 /* Build configuration list for PBXNativeTarget "Stock Protfolio Final Project" */ = {
+		CD54C83725A0E54700DD4511 /* Build configuration list for PBXNativeTarget "Stock Portfolio Final Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD54C83825A0E54700DD4511 /* Debug */,
