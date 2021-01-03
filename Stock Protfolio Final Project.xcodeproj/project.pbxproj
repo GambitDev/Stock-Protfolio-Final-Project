@@ -10,11 +10,14 @@
 		CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82625A0E54100DD4511 /* AppDelegate.swift */; };
 		CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82825A0E54100DD4511 /* SceneDelegate.swift */; };
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
-		CD54C83025A0E54700DD4511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82F25A0E54700DD4511 /* Assets.xcassets */; };
-		CD54C83325A0E54700DD4511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
 		CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */; };
 		CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
 		CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */; };
+		CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2525A1F1EA00501046 /* ImageService.swift */; };
+		CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2A25A1F65000501046 /* CurrencyRates.swift */; };
+		CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */; };
+		CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82F25A0E54700DD4511 /* Assets.xcassets */; };
+		CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		CD54C83425A0E54700DD4511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreenPresenter.swift; sourceTree = "<group>"; };
 		CD54C84825A106A500DD4511 /* ProtfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtfolioViewController.swift; sourceTree = "<group>"; };
+		CDE04B2525A1F1EA00501046 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesService.swift; sourceTree = "<group>"; };
+		CDE04B2A25A1F65000501046 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +66,13 @@
 		CD54C82525A0E54000DD4511 /* Stock Protfolio Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				CDE04B2025A1EF7500501046 /* Networking Module */,
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
 				CD54C84425A1065100DD4511 /* Protfolio Module */,
 				CD54C82625A0E54100DD4511 /* AppDelegate.swift */,
 				CD54C82825A0E54100DD4511 /* SceneDelegate.swift */,
 				CD54C82C25A0E54100DD4511 /* Main.storyboard */,
-				CD54C82F25A0E54700DD4511 /* Assets.xcassets */,
-				CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */,
+				CDE04B2F25A200F800501046 /* Supporting Files */,
 				CD54C83425A0E54700DD4511 /* Info.plist */,
 			);
 			path = "Stock Protfolio Final Project";
@@ -110,6 +116,7 @@
 		CD54C84525A1066F00DD4511 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDE04B2A25A1F65000501046 /* CurrencyRates.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +134,32 @@
 			children = (
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CDE04B2025A1EF7500501046 /* Networking Module */ = {
+			isa = PBXGroup;
+			children = (
+				CDE04B2725A1F21400501046 /* Web Services */,
+			);
+			path = "Networking Module";
+			sourceTree = "<group>";
+		};
+		CDE04B2725A1F21400501046 /* Web Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */,
+				CDE04B2525A1F1EA00501046 /* ImageService.swift */,
+			);
+			path = "Web Services";
+			sourceTree = "<group>";
+		};
+		CDE04B2F25A200F800501046 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD54C82F25A0E54700DD4511 /* Assets.xcassets */,
+				CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD54C83325A0E54700DD4511 /* LaunchScreen.storyboard in Resources */,
-				CD54C83025A0E54700DD4511 /* Assets.xcassets in Resources */,
+				CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */,
+				CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */,
 				CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,10 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */,
+				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
 				CD54C84925A106A500DD4511 /* ProtfolioViewController.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
+				CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
