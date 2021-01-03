@@ -1,6 +1,6 @@
 //
 //  LogInViewController.swift
-//  Stock Protfolio Final Project
+//  Stock Portfolio Final Project
 //
 //  Created by Dan Gavrielov on 02/01/2021.
 //  Copyright © 2021 Dan Gavrielov. All rights reserved.
@@ -109,7 +109,7 @@ extension LogInViewController: LogInPresenterDelegate {
     
     func loginSuccessful() {
         activityIndicatorView.alpha = 1
-        performSegue(withIdentifier: ProtfolioViewController.segueIdentifier, sender: self)
+        performSegue(withIdentifier: PortfolioViewController.segueIdentifier, sender: self)
     }
     
     func loginFailed() {
