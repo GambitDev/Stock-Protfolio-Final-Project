@@ -198,10 +198,28 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AIx-pi-xFM">
+                                <rect key="frame" x="319" y="108" width="75" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-Ub-Cmd">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-YT-ub5">
+                                        <rect key="frame" x="6.5" y="20.5" width="62" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ya9-6N-H30" firstAttribute="leading" secondItem="7cY-vT-IsD" secondAttribute="leading" constant="20" id="0gR-2U-UfF"/>
+                            <constraint firstItem="AIx-pi-xFM" firstAttribute="top" secondItem="7cY-vT-IsD" secondAttribute="top" constant="20" id="0jz-UX-5yg"/>
                             <constraint firstItem="q4g-DH-ZvU" firstAttribute="top" secondItem="4Ex-8Z-L71" secondAttribute="bottom" constant="2" id="2Sg-cW-v3o"/>
                             <constraint firstItem="7cY-vT-IsD" firstAttribute="trailing" secondItem="ya9-6N-H30" secondAttribute="trailing" constant="20" id="3K0-wc-Lyx"/>
                             <constraint firstItem="9J2-EJ-u1t" firstAttribute="leading" secondItem="7cY-vT-IsD" secondAttribute="leading" id="5ne-05-oez"/>
@@ -211,6 +229,7 @@
                             <constraint firstAttribute="trailing" secondItem="CRL-cR-fjd" secondAttribute="trailing" id="Mex-90-mtw"/>
                             <constraint firstItem="lLu-LI-yAs" firstAttribute="leading" secondItem="7cY-vT-IsD" secondAttribute="leading" constant="20" id="OGC-eV-bz8"/>
                             <constraint firstItem="4Ex-8Z-L71" firstAttribute="leading" secondItem="7cY-vT-IsD" secondAttribute="leading" constant="20" id="RH2-bj-oyi"/>
+                            <constraint firstItem="7cY-vT-IsD" firstAttribute="trailing" secondItem="AIx-pi-xFM" secondAttribute="trailing" constant="20" id="Vx9-il-iPE"/>
                             <constraint firstItem="nnX-Jo-jXO" firstAttribute="leading" secondItem="7cY-vT-IsD" secondAttribute="leading" id="a95-p0-yfw"/>
                             <constraint firstItem="9J2-EJ-u1t" firstAttribute="top" secondItem="nnX-Jo-jXO" secondAttribute="bottom" id="ame-j3-DTX"/>
                             <constraint firstItem="7cY-vT-IsD" firstAttribute="trailing" secondItem="q4g-DH-ZvU" secondAttribute="trailing" constant="20" id="bzT-8p-0Dj"/>
@@ -238,6 +257,7 @@
                         <outlet property="changeInAssetsValueImageView" destination="lLu-LI-yAs" id="Wmt-7k-PSD"/>
                         <outlet property="currencySearchBar" destination="nnX-Jo-jXO" id="Lb8-hi-ira"/>
                         <outlet property="currencyTableView" destination="9J2-EJ-u1t" id="85C-cm-SHW"/>
+                        <outlet property="currentCurrencyLabel" destination="eAQ-YT-ub5" id="QGS-7H-ymn"/>
                         <outlet property="sellButton" destination="mvi-6q-lak" id="mpS-C0-zPl"/>
                     </connections>
                 </viewController>
