@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct CurrencySymbol: Codable {
+struct CurrencySymbols: Codable {
     let symbols: [String: String]
 }
