@@ -19,7 +19,8 @@
 		CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82F25A0E54700DD4511 /* Assets.xcassets */; };
 		CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
 		CDE04B3625A3205300501046 /* currency_symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = CDE04B3525A3205300501046 /* currency_symbols.json */; };
-		CDE04B3825A377B300501046 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3725A377B300501046 /* CurrencySymbol.swift */; };
+		CDE04B3825A377B300501046 /* CurrencySymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3725A377B300501046 /* CurrencySymbols.swift */; };
+		CDE04B3C25A37FF400501046 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3A25A37B3000501046 /* CurrencyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesService.swift; sourceTree = "<group>"; };
 		CDE04B2A25A1F65000501046 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
 		CDE04B3525A3205300501046 /* currency_symbols.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = currency_symbols.json; sourceTree = "<group>"; };
-		CDE04B3725A377B300501046 /* CurrencySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbol.swift; sourceTree = "<group>"; };
+		CDE04B3725A377B300501046 /* CurrencySymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbols.swift; sourceTree = "<group>"; };
+		CDE04B3A25A37B3000501046 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE04B2A25A1F65000501046 /* CurrencyRates.swift */,
-				CDE04B3725A377B300501046 /* CurrencySymbol.swift */,
+				CDE04B3725A377B300501046 /* CurrencySymbols.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 		CDE04B3925A37A6500501046 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				CDE04B3A25A37B3000501046 /* CurrencyService.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE04B3825A377B300501046 /* CurrencySymbol.swift in Sources */,
+				CDE04B3C25A37FF400501046 /* CurrencyService.swift in Sources */,
+				CDE04B3825A377B300501046 /* CurrencySymbols.swift in Sources */,
 				CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */,
 				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
