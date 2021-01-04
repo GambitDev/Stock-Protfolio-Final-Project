@@ -33,6 +33,13 @@ class LogInViewController: UIViewController {
         super.viewWillAppear(animated)
         
         activityIndicatorView.alpha = 0
+        hideNavigationController()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        showNavigtionController()
     }
     
     //MARK: - Actions
@@ -98,7 +105,13 @@ class LogInViewController: UIViewController {
         alertController.actions[0].isEnabled = !isUsernameFieldEmpty && !isPasswordFieldEmpty
     }
     
-    //MARK: System Methods
+    private func hideNavigationController() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    private func showNavigtionController() {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 //MARK: - Extensions

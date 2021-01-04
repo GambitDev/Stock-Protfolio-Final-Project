@@ -33,6 +33,18 @@ class PortfolioViewController: UIViewController {
         configureScreen()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        hideNavigationController()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        showNavigtionController()
+    }
+    
     //MARK: - Actions
     @IBAction func buyButtonClicked(_ sender: UIButton) {
     }
@@ -50,6 +62,14 @@ class PortfolioViewController: UIViewController {
     private func setButtonsStyle() {
         buyButton.layer.cornerRadius = 10
         sellButton.layer.cornerRadius = 10
+    }
+    
+    private func hideNavigationController() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    private func showNavigtionController() {
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
 
