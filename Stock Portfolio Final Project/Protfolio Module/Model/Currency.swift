@@ -1,5 +1,5 @@
 //
-//  CurrencySymbol.swift
+//  Currency.swift
 //  Stock Portfolio Final Project
 //
 //  Created by Dan Gavrielov on 04/01/2021.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct CurrencySymbols: Codable {
-    let symbols: [String: String]
+struct Currency: Codable {
+    let code, symbol: String
 }
