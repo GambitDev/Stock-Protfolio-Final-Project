@@ -14,15 +14,16 @@ class CurrencyService {
     static let shared = CurrencyService()
     private let userDefaults = UserDefaults()
     private let userDefaultsCurrencyCodeKey = "currency_code"
-    var currencySymbols: CurrencySymbols? = nil
-    var selectedCurrency: (code: String, symbol: String) = ("USA","$")
+//    var currencySymbols: CurrencySymbols? = nil
+    var currencies = [Currency]()
+    var selectedCurrency = Currency(code: "USA", symbol: "$")
     
     //MARK: - Init
     private init() {
         if let path = Bundle.main.path(forResource: "currency_symbols", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                currencySymbols = try JSONDecoder().decode(CurrencySymbols.self, from: data)
+                currencies = try JSONDecoder().decode([Currency].self, from: data)
             } catch {
                 print(error)
             }
@@ -34,9 +35,8 @@ class CurrencyService {
     
     //MARK: - Methods
     func changeCurrency(to code: String) {
-        guard let currencySymbols = currencySymbols else { return }
-        selectedCurrency.code = currencySymbols.symbols.keys.first(where: {$0 == code})!
-        selectedCurrency.symbol = currencySymbols.symbols[code]!
+        guard let newCurrency = currencies.first(where: {$0.code == code}) else { return }
+        selectedCurrency = newCurrency
         userDefaults.set(code, forKey: userDefaultsCurrencyCodeKey)
     }
 }
