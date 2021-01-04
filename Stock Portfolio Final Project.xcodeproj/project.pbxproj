@@ -66,7 +66,7 @@
 		CD54C82525A0E54000DD4511 /* Stock Portfolio Final Project */ = {
 			isa = PBXGroup;
 			children = (
-				CDE04B2025A1EF7500501046 /* Networking Module */,
+				CDE04B2025A1EF7500501046 /* Services */,
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
 				CD54C84425A1065100DD4511 /* Protfolio Module */,
 				CD54C82625A0E54100DD4511 /* AppDelegate.swift */,
@@ -136,12 +136,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		CDE04B2025A1EF7500501046 /* Networking Module */ = {
+		CDE04B2025A1EF7500501046 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				CDE04B2725A1F21400501046 /* Web Services */,
 			);
-			path = "Networking Module";
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CDE04B2725A1F21400501046 /* Web Services */ = {

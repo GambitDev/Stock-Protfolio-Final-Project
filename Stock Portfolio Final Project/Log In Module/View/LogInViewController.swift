@@ -25,7 +25,7 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configurePage()
+        configureScreen()
         
     }
     
@@ -50,7 +50,7 @@ class LogInViewController: UIViewController {
     }
     
     //MARK: - Methods
-    private func configurePage() {
+    private func configureScreen() {
         presenter.delegate = self
         setButtonsStyle()
         activityIndicatorView.alpha = 0
