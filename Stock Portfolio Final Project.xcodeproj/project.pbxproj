@@ -18,6 +18,8 @@
 		CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */; };
 		CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82F25A0E54700DD4511 /* Assets.xcassets */; };
 		CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */; };
+		CDE04B3625A3205300501046 /* currency_symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = CDE04B3525A3205300501046 /* currency_symbols.json */; };
+		CDE04B3825A377B300501046 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3725A377B300501046 /* CurrencySymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CDE04B2525A1F1EA00501046 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesService.swift; sourceTree = "<group>"; };
 		CDE04B2A25A1F65000501046 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		CDE04B3525A3205300501046 /* currency_symbols.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = currency_symbols.json; sourceTree = "<group>"; };
+		CDE04B3725A377B300501046 /* CurrencySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				CDE04B2025A1EF7500501046 /* Services */,
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
 				CD54C84425A1065100DD4511 /* Protfolio Module */,
+				CDE04B3425A3200D00501046 /* Json Files */,
 				CD54C82625A0E54100DD4511 /* AppDelegate.swift */,
 				CD54C82825A0E54100DD4511 /* SceneDelegate.swift */,
 				CD54C82C25A0E54100DD4511 /* Main.storyboard */,
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE04B2A25A1F65000501046 /* CurrencyRates.swift */,
+				CDE04B3725A377B300501046 /* CurrencySymbol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE04B2725A1F21400501046 /* Web Services */,
+				CDE04B3925A37A6500501046 /* Currency */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -160,6 +167,21 @@
 				CD54C83125A0E54700DD4511 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE04B3425A3200D00501046 /* Json Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE04B3525A3205300501046 /* currency_symbols.json */,
+			);
+			path = "Json Files";
+			sourceTree = "<group>";
+		};
+		CDE04B3925A37A6500501046 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE04B3625A3205300501046 /* currency_symbols.json in Resources */,
 				CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */,
 				CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */,
 				CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */,
@@ -233,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE04B3825A377B300501046 /* CurrencySymbol.swift in Sources */,
 				CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */,
 				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
