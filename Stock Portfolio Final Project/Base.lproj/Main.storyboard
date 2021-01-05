@@ -181,9 +181,12 @@
                                     <outlet property="delegate" destination="ZhU-D7-04C" id="Oxm-co-d14"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" placeholder="Search for currencies" translatesAutoresizingMaskIntoConstraints="NO" id="nnX-Jo-jXO">
+                            <searchBar contentMode="redraw" text="" placeholder="Search for currency by code" translatesAutoresizingMaskIntoConstraints="NO" id="nnX-Jo-jXO">
                                 <rect key="frame" x="0.0" y="186.5" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZhU-D7-04C" id="49U-f1-Aok"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-Xj-KbG">
                                 <rect key="frame" x="0.0" y="533" width="414" height="262"/>

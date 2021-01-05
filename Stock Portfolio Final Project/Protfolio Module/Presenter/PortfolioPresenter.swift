@@ -17,10 +17,16 @@ class PortfolioPresenter {
     //MARK: - Properties
     private let currencyService = CurrencyService.shared
     var delegate: PortfolioPresenterDelegate?
+    var displayedCurrencies = [Currency]()
     var currencyArrayLength: Int {
         get {
-            currencyService.currencies.count
+            displayedCurrencies.count
         }
+    }
+    
+    //MARK: - Init
+    init() {
+        displayedCurrencies = currencyService.currencies
     }
     
     //MARK: - Methods
@@ -29,19 +35,30 @@ class PortfolioPresenter {
     }
     
     func getCurrencyCodeString(for index: Int) -> String {
-        "Currency code - \(currencyService.currencies[index].code)"
+        "Currency code - \(displayedCurrencies[index].code)"
     }
     
     func getCurrencySymbolString(for index: Int) -> String {
-        "Symbol - \(currencyService.currencies[index].symbol)"
+        "Symbol - \(displayedCurrencies[index].symbol)"
     }
     
     func didSelectCurrencyRow(at index: Int) {
-        changeCurrency(to: currencyService.currencies[index].code)
+        changeCurrency(to: displayedCurrencies[index].code)
     }
     
     func changeCurrency(to code: String) {
         currencyService.changeCurrency(to: code)
+        delegate?.updateData()
+    }
+    
+    func searchBarTextDidChange(to text: String) {
+        if text.isEmpty {
+            displayedCurrencies = currencyService.currencies
+        } else {
+            displayedCurrencies = currencyService.currencies.filter {
+                $0.code.lowercased().contains(text.lowercased())
+            }
+        }
         delegate?.updateData()
     }
 }
