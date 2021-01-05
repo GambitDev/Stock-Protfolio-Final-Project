@@ -14,7 +14,6 @@ class CurrencyService {
     static let shared = CurrencyService()
     private let userDefaults = UserDefaults()
     private let userDefaultsCurrencyCodeKey = "currency_code"
-//    var currencySymbols: CurrencySymbols? = nil
     var currencies = [Currency]()
     var selectedCurrency = Currency(code: "USA", symbol: "$")
     
