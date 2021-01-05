@@ -112,3 +112,9 @@ extension PortfolioViewController: PortfolioPresenterDelegate {
         currentCurrencyLabel.text = presenter.getSelectedCurrencyString()
     }
 }
+
+extension PortfolioViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter.searchBarTextDidChange(to: searchText)
+    }
+}
