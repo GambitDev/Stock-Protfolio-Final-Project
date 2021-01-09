@@ -12,7 +12,6 @@
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
 		CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84025A0FA9600DD4511 /* LogInScreenPresenter.swift */; };
 		CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82A25A0E54100DD4511 /* LogInViewController.swift */; };
-		CD54C84925A106A500DD4511 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* PortfolioViewController.swift */; };
 		CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2525A1F1EA00501046 /* ImageService.swift */; };
 		CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2A25A1F65000501046 /* CurrencyRates.swift */; };
 		CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */; };
@@ -22,6 +21,12 @@
 		CDE04B3C25A37FF400501046 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3A25A37B3000501046 /* CurrencyService.swift */; };
 		CDE04B3E25A390E700501046 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3D25A390E700501046 /* PortfolioPresenter.swift */; };
 		CDE04B4025A3A16000501046 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3F25A3A16000501046 /* Currency.swift */; };
+		CDE04B4225A4600C00501046 /* stocks_names.list.json in Resources */ = {isa = PBXBuildFile; fileRef = CDE04B4125A4600B00501046 /* stocks_names.list.json */; };
+		CDE04B4525A4604600501046 /* AssetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B4425A4604600501046 /* AssetsService.swift */; };
+		CDE04B4725A4615C00501046 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B4625A4615C00501046 /* Asset.swift */; };
+		CDE04B4A25A4666000501046 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C84825A106A500DD4511 /* PortfolioViewController.swift */; };
+		CDE04B5125AA24A000501046 /* AssetSummery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B5025AA24A000501046 /* AssetSummery.swift */; };
+		CDE04B5225AA25A800501046 /* AssetsSummeryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B4825A4642D00501046 /* AssetsSummeryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		CDE04B3A25A37B3000501046 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		CDE04B3D25A390E700501046 /* PortfolioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioPresenter.swift; sourceTree = "<group>"; };
 		CDE04B3F25A3A16000501046 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		CDE04B4125A4600B00501046 /* stocks_names.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_names.list.json; sourceTree = "<group>"; };
+		CDE04B4425A4604600501046 /* AssetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsService.swift; sourceTree = "<group>"; };
+		CDE04B4625A4615C00501046 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		CDE04B4825A4642D00501046 /* AssetsSummeryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSummeryService.swift; sourceTree = "<group>"; };
+		CDE04B5025AA24A000501046 /* AssetSummery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSummery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE04B2025A1EF7500501046 /* Services */,
+				CD54C84525A1066F00DD4511 /* Shared Models */,
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
 				CD54C84425A1065100DD4511 /* Protfolio Module */,
 				CDE04B3425A3200D00501046 /* Json Files */,
@@ -115,20 +126,21 @@
 		CD54C84425A1065100DD4511 /* Protfolio Module */ = {
 			isa = PBXGroup;
 			children = (
-				CD54C84525A1066F00DD4511 /* Model */,
 				CD54C84625A1067600DD4511 /* View */,
 				CD54C84725A1067D00DD4511 /* Presenter */,
 			);
 			path = "Protfolio Module";
 			sourceTree = "<group>";
 		};
-		CD54C84525A1066F00DD4511 /* Model */ = {
+		CD54C84525A1066F00DD4511 /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
 				CDE04B2A25A1F65000501046 /* CurrencyRates.swift */,
 				CDE04B3F25A3A16000501046 /* Currency.swift */,
+				CDE04B4625A4615C00501046 /* Asset.swift */,
+				CDE04B5025AA24A000501046 /* AssetSummery.swift */,
 			);
-			path = Model;
+			path = "Shared Models";
 			sourceTree = "<group>";
 		};
 		CD54C84625A1067600DD4511 /* View */ = {
@@ -152,6 +164,7 @@
 			children = (
 				CDE04B2725A1F21400501046 /* Web Services */,
 				CDE04B3925A37A6500501046 /* Currency */,
+				CDE04B4325A4602400501046 /* Assets */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,6 +174,7 @@
 			children = (
 				CDE04B2825A1F34500501046 /* CurrencyRatesService.swift */,
 				CDE04B2525A1F1EA00501046 /* ImageService.swift */,
+				CDE04B4825A4642D00501046 /* AssetsSummeryService.swift */,
 			);
 			path = "Web Services";
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 		CDE04B3425A3200D00501046 /* Json Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDE04B4125A4600B00501046 /* stocks_names.list.json */,
 				CDE04B3525A3205300501046 /* currency_symbols.json */,
 			);
 			path = "Json Files";
@@ -188,6 +203,14 @@
 				CDE04B3A25A37B3000501046 /* CurrencyService.swift */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		CDE04B4325A4602400501046 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CDE04B4425A4604600501046 /* AssetsService.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +273,7 @@
 			files = (
 				CDE04B3625A3205300501046 /* currency_symbols.json in Resources */,
 				CDE04B3125A2013B00501046 /* LaunchScreen.storyboard in Resources */,
+				CDE04B4225A4600C00501046 /* stocks_names.list.json in Resources */,
 				CDE04B3025A2012D00501046 /* Assets.xcassets in Resources */,
 				CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */,
 			);
@@ -263,13 +287,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE04B4025A3A16000501046 /* Currency.swift in Sources */,
+				CDE04B4725A4615C00501046 /* Asset.swift in Sources */,
 				CDE04B3C25A37FF400501046 /* CurrencyService.swift in Sources */,
 				CDE04B3E25A390E700501046 /* PortfolioPresenter.swift in Sources */,
 				CDE04B2625A1F1EA00501046 /* ImageService.swift in Sources */,
+				CDE04B5125AA24A000501046 /* AssetSummery.swift in Sources */,
+				CDE04B4A25A4666000501046 /* PortfolioViewController.swift in Sources */,
 				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
+				CDE04B4525A4604600501046 /* AssetsService.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
-				CD54C84925A106A500DD4511 /* PortfolioViewController.swift in Sources */,
+				CDE04B5225AA25A800501046 /* AssetsSummeryService.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
 				CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,

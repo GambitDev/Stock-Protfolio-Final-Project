@@ -79,7 +79,11 @@ extension PortfolioViewController: UITableViewDataSource {
         if tableView == currencyTableView {
             return presenter.currencyArrayLength
         } else {
-            return 0
+            if presenter.summeriesArrayLength != 0 {
+                return presenter.summeriesArrayLength
+            } else {
+                return 1
+            }
         }
     }
     

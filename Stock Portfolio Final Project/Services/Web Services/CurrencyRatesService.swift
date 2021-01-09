@@ -10,7 +10,7 @@ import Foundation
 
 class CurrencyRatesService {
     
-    func getCurrencies(completion: @escaping (CurrencyRates) -> ()) {
+    func getCurrencyRates(completion: @escaping (CurrencyRates) -> ()) {
         guard let url = NSURL(string: "https://currency-value.p.rapidapi.com/global/currency_rates") else {
             print("Error creating url object")
             return
