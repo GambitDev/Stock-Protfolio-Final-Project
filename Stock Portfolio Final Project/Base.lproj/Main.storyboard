@@ -376,7 +376,7 @@
         <!--Asset List-->
         <scene sceneID="2jH-0j-Hoh">
             <objects>
-                <viewController id="utj-qg-M4d" sceneMemberID="viewController">
+                <viewController id="utj-qg-M4d" customClass="AssetListViewController" customModule="Stock_Portfolio_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C6S-c6-Rev">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,6 +404,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Asset List" id="w7v-oe-RHq"/>
                     <connections>
+                        <outlet property="assetsTableView" destination="vsg-xq-lCT" id="fYF-bn-gDF"/>
+                        <outlet property="industrySearchBar" destination="Asi-0D-gnN" id="dmn-Kb-Sem"/>
                         <segue destination="xTD-Nz-sgL" kind="show" identifier="assetDetailsSegueIdentifier" id="MjR-am-dgO"/>
                     </connections>
                 </viewController>
