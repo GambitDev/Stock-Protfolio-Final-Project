@@ -266,6 +266,7 @@
                                         <connections>
                                             <action selector="buyButtonClicked:" destination="ZhU-D7-04C" eventType="touchUpInside" id="D8p-dQ-Tyq"/>
                                             <action selector="logInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ka9-4T-62b"/>
+                                            <segue destination="utj-qg-M4d" kind="show" identifier="buyAssetsSegueIdentifier" id="nD6-pN-YRc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvi-6q-lak">
@@ -278,6 +279,7 @@
                                         <connections>
                                             <action selector="logInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUz-gj-24k"/>
                                             <action selector="sellButtonClicked:" destination="ZhU-D7-04C" eventType="touchUpInside" id="hAu-Kf-VXO"/>
+                                            <segue destination="xTD-Nz-sgL" kind="show" identifier="sellAssetsSegueIdentifier" id="OTK-Sg-r6U"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -371,6 +373,60 @@
             </objects>
             <point key="canvasLocation" x="1771.0144927536232" y="112.5"/>
         </scene>
+        <!--Asset List-->
+        <scene sceneID="2jH-0j-Hoh">
+            <objects>
+                <viewController id="utj-qg-M4d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C6S-c6-Rev">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Asi-0D-gnN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vsg-xq-lCT">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Rs-KR-cnA" firstAttribute="trailing" secondItem="vsg-xq-lCT" secondAttribute="trailing" id="B8K-wr-3Ln"/>
+                            <constraint firstItem="Asi-0D-gnN" firstAttribute="top" secondItem="3Rs-KR-cnA" secondAttribute="top" id="Diu-vt-7kz"/>
+                            <constraint firstItem="Asi-0D-gnN" firstAttribute="leading" secondItem="3Rs-KR-cnA" secondAttribute="leading" id="Lac-ue-uGT"/>
+                            <constraint firstItem="vsg-xq-lCT" firstAttribute="leading" secondItem="3Rs-KR-cnA" secondAttribute="leading" id="Z6J-1F-fyK"/>
+                            <constraint firstAttribute="bottom" secondItem="vsg-xq-lCT" secondAttribute="bottom" id="dCi-LR-vaY"/>
+                            <constraint firstItem="vsg-xq-lCT" firstAttribute="top" secondItem="Asi-0D-gnN" secondAttribute="bottom" id="kVb-EI-Aq5"/>
+                            <constraint firstItem="3Rs-KR-cnA" firstAttribute="trailing" secondItem="Asi-0D-gnN" secondAttribute="trailing" id="wNP-pK-sPY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Rs-KR-cnA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asset List" id="w7v-oe-RHq"/>
+                    <connections>
+                        <segue destination="xTD-Nz-sgL" kind="show" identifier="assetDetailsSegueIdentifier" id="MjR-am-dgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="967-6a-XDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="806"/>
+        </scene>
+        <!--Asset Details-->
+        <scene sceneID="5pv-SK-EdM">
+            <objects>
+                <viewController id="xTD-Nz-sgL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBS-jG-0w6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7IM-na-CbF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asset Details" id="Pgp-jc-j5j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBx-SL-WI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2549" y="552"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ptd-xs-ikc">
             <objects>
@@ -390,6 +446,9 @@
             <point key="canvasLocation" x="323" y="113"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MjR-am-dgO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.up" catalog="system" width="120" height="128"/>
     </resources>
