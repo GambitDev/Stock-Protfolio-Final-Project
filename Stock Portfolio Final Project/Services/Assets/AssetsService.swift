@@ -14,6 +14,7 @@ class AssetsService {
     static let shared = AssetsService()
     private var assets = [Asset]()
     var assetSummeries = [AssetSummery]()
+    var userAssets = [AssetSummery]()
     
     //MARK: - Init
     private init() {

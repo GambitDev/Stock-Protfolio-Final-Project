@@ -28,17 +28,17 @@ class PortfolioPresenter {
     
     //assets properties
     private let assetsService = AssetsService.shared
-    var assetSummeries = [AssetSummery]()
-    var summeriesArrayLength: Int {
+    var userAssets = [AssetSummery]()
+    var userAssetsArrayLength: Int {
         get {
-            assetSummeries.count
+            userAssets.count
         }
     }
     
     //MARK: - Init
     init() {
         displayedCurrencies = currencyService.currencies
-        assetSummeries = assetsService.assetSummeries
+        userAssets = assetsService.userAssets
     }
     
     //MARK: - Methods
