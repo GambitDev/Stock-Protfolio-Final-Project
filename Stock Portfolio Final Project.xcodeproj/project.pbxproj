@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CD0518D425B355A400404AC3 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE04B3D25A390E700501046 /* PortfolioPresenter.swift */; };
 		CD0518D625B3563000404AC3 /* UserAssetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518D525B3563000404AC3 /* UserAssetTableViewCell.swift */; };
+		CD0518DA25B3684000404AC3 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518D925B3684000404AC3 /* Section.swift */; };
+		CD0518E125B3692900404AC3 /* AssetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E025B3692900404AC3 /* AssetTableViewCell.swift */; };
+		CD0518E325B36A1D00404AC3 /* ExpandableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E225B36A1D00404AC3 /* ExpandableHeaderFooterView.swift */; };
+		CD0518E525B36ABC00404AC3 /* AssetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E425B36ABC00404AC3 /* AssetListPresenter.swift */; };
+		CD0518E625B3711C00404AC3 /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518DB25B368C300404AC3 /* AssetListViewController.swift */; };
 		CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82625A0E54100DD4511 /* AppDelegate.swift */; };
 		CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82825A0E54100DD4511 /* SceneDelegate.swift */; };
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 
 /* Begin PBXFileReference section */
 		CD0518D525B3563000404AC3 /* UserAssetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAssetTableViewCell.swift; sourceTree = "<group>"; };
+		CD0518D925B3684000404AC3 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		CD0518DB25B368C300404AC3 /* AssetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListViewController.swift; sourceTree = "<group>"; };
+		CD0518E025B3692900404AC3 /* AssetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTableViewCell.swift; sourceTree = "<group>"; };
+		CD0518E225B36A1D00404AC3 /* ExpandableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderFooterView.swift; sourceTree = "<group>"; };
+		CD0518E425B36ABC00404AC3 /* AssetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListPresenter.swift; sourceTree = "<group>"; };
 		CD54C82325A0E54000DD4511 /* Stock Portfolio Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Portfolio Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54C82625A0E54100DD4511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD54C82825A0E54100DD4511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +77,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0518D725B3680100404AC3 /* Asset List Module */ = {
+			isa = PBXGroup;
+			children = (
+				CD0518D825B3682B00404AC3 /* Model */,
+				CD0518DD25B368CB00404AC3 /* View */,
+				CD0518DE25B368D600404AC3 /* Presenter */,
+			);
+			path = "Asset List Module";
+			sourceTree = "<group>";
+		};
+		CD0518D825B3682B00404AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD0518D925B3684000404AC3 /* Section.swift */,
+				CD0518E225B36A1D00404AC3 /* ExpandableHeaderFooterView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD0518DD25B368CB00404AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0518DF25B3690600404AC3 /* Table View Cells */,
+				CD0518DB25B368C300404AC3 /* AssetListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0518DE25B368D600404AC3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CD0518E425B36ABC00404AC3 /* AssetListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CD0518DF25B3690600404AC3 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD0518E025B3692900404AC3 /* AssetTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		CD54C81A25A0E54000DD4511 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +144,7 @@
 				CD54C84525A1066F00DD4511 /* Shared Models */,
 				CD54C83B25A0EE6F00DD4511 /* Log In Module */,
 				CD54C84425A1065100DD4511 /* Protfolio Module */,
+				CD0518D725B3680100404AC3 /* Asset List Module */,
 				CDE04B3425A3200D00501046 /* Json Files */,
 				CD54C82625A0E54100DD4511 /* AppDelegate.swift */,
 				CD54C82825A0E54100DD4511 /* SceneDelegate.swift */,
@@ -297,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0518DA25B3684000404AC3 /* Section.swift in Sources */,
 				CDE04B4025A3A16000501046 /* Currency.swift in Sources */,
 				CDE04B4725A4615C00501046 /* Asset.swift in Sources */,
 				CDE04B3C25A37FF400501046 /* CurrencyService.swift in Sources */,
@@ -304,13 +360,17 @@
 				CD0518D425B355A400404AC3 /* PortfolioPresenter.swift in Sources */,
 				CDE04B5125AA24A000501046 /* AssetSummery.swift in Sources */,
 				CDE04B4A25A4666000501046 /* PortfolioViewController.swift in Sources */,
+				CD0518E125B3692900404AC3 /* AssetTableViewCell.swift in Sources */,
 				CDE04B2E25A2008400501046 /* CurrencyRatesService.swift in Sources */,
 				CD54C84325A1044400DD4511 /* LogInViewController.swift in Sources */,
+				CD0518E325B36A1D00404AC3 /* ExpandableHeaderFooterView.swift in Sources */,
 				CD0518D625B3563000404AC3 /* UserAssetTableViewCell.swift in Sources */,
+				CD0518E625B3711C00404AC3 /* AssetListViewController.swift in Sources */,
 				CDE04B4525A4604600501046 /* AssetsService.swift in Sources */,
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
 				CDE04B5225AA25A800501046 /* AssetsSummeryService.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
+				CD0518E525B36ABC00404AC3 /* AssetListPresenter.swift in Sources */,
 				CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
 			);
