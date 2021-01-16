@@ -26,8 +26,8 @@ class AssetsService {
                 print(error)
             }
         }
-        AssetsSummeryService().getAssetSummeries(for: assets) { summeries in
-            self.assetSummeries = summeries
-        }
+//        AssetsSummeryService().getAssetSummeries(for: assets) { summeries in
+//            self.assetSummeries = summeries
+//        }
     }
 }

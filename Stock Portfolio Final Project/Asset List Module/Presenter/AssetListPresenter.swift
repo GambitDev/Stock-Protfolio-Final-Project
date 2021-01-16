@@ -20,6 +20,7 @@ class AssetListPresenter{
         let industryDictionary = createIndustryDictionary()
         populateSections(from: industryDictionary)
         filteredSections = sections
+        sortSectionsAndUpdateData()
     }
     
     //MARK: - Methods
@@ -39,5 +40,9 @@ class AssetListPresenter{
         for element in dict {
             sections.append(Section(industry: element.key, assets: element.value, expanded: false))
         }
+    }
+    
+    private func sortSectionsAndUpdateData() {
+        filteredSections.sort(by: {$0.industry < $1.industry})
     }
 }

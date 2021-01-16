@@ -55,6 +55,7 @@ class PortfolioViewController: UIViewController {
     //MARK: - Methods
     private func configureScreen() {
         setButtonsStyle()
+        configureAssetsTableView()
         presenter.delegate = self
         currentCurrencyLabel.text = presenter.getSelectedCurrencyString()
     }
@@ -70,6 +71,10 @@ class PortfolioViewController: UIViewController {
     
     private func showNavigtionController() {
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    private func configureAssetsTableView() {
+        assetsTableView.tableFooterView = UIView()
     }
 }
 
