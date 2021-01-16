@@ -21,9 +21,24 @@ class AssetListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configurePage()
     }
     
     //MARK: - Methods
+    private func configurePage() {
+        configurNavigationBar()
+        configureTableView()
+    }
+    
+    private func configurNavigationBar() {
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+    }
+    
+    private func configureTableView() {
+        assetsTableView.tableFooterView = UIView()
+    }
 }
 
 //MARK: - Extensions

@@ -12,8 +12,8 @@
 		CD0518DA25B3684000404AC3 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518D925B3684000404AC3 /* Section.swift */; };
 		CD0518E125B3692900404AC3 /* AssetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E025B3692900404AC3 /* AssetTableViewCell.swift */; };
 		CD0518E325B36A1D00404AC3 /* ExpandableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E225B36A1D00404AC3 /* ExpandableHeaderFooterView.swift */; };
-		CD0518E525B36ABC00404AC3 /* AssetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E425B36ABC00404AC3 /* AssetListPresenter.swift */; };
 		CD0518E625B3711C00404AC3 /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518DB25B368C300404AC3 /* AssetListViewController.swift */; };
+		CD0518E725B3730800404AC3 /* AssetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0518E425B36ABC00404AC3 /* AssetListPresenter.swift */; };
 		CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82625A0E54100DD4511 /* AppDelegate.swift */; };
 		CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54C82825A0E54100DD4511 /* SceneDelegate.swift */; };
 		CD54C82E25A0E54100DD4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54C82C25A0E54100DD4511 /* Main.storyboard */; };
@@ -370,7 +370,7 @@
 				CD54C82725A0E54100DD4511 /* AppDelegate.swift in Sources */,
 				CDE04B5225AA25A800501046 /* AssetsSummeryService.swift in Sources */,
 				CD54C82925A0E54100DD4511 /* SceneDelegate.swift in Sources */,
-				CD0518E525B36ABC00404AC3 /* AssetListPresenter.swift in Sources */,
+				CD0518E725B3730800404AC3 /* AssetListPresenter.swift in Sources */,
 				CDE04B2B25A1F65000501046 /* CurrencyRates.swift in Sources */,
 				CD54C84125A0FA9600DD4511 /* LogInScreenPresenter.swift in Sources */,
 			);
