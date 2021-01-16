@@ -79,7 +79,11 @@ extension PortfolioViewController: UITableViewDataSource {
         if tableView == currencyTableView {
             return presenter.currencyArrayLength
         } else {
-            return 0
+            if presenter.userAssetsArrayLength != 0 {
+                return presenter.userAssetsArrayLength
+            } else {
+                return 1
+            }
         }
     }
     
@@ -92,7 +96,13 @@ extension PortfolioViewController: UITableViewDataSource {
             cell.detailTextLabel?.text = presenter.getCurrencySymbolString(for: indexPath.row)
             return cell
         } else {
-            return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: UserAssetTableViewCell.reuseIdentifier) as? UserAssetTableViewCell else { return UITableViewCell() }
+            if presenter.userAssetsArrayLength == 0 {
+                cell.configureEmptyPortfolioCell()
+            } else {
+                cell.configureCell()
+            }
+            return cell
         }
     }
 }

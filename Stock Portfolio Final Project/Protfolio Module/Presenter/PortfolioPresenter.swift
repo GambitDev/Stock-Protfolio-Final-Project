@@ -15,8 +15,10 @@ protocol PortfolioPresenterDelegate {
 class PortfolioPresenter {
     
     //MARK: - Properties
-    private let currencyService = CurrencyService.shared
     var delegate: PortfolioPresenterDelegate?
+    
+    //currency properties
+    private let currencyService = CurrencyService.shared
     var displayedCurrencies = [Currency]()
     var currencyArrayLength: Int {
         get {
@@ -24,9 +26,19 @@ class PortfolioPresenter {
         }
     }
     
+    //assets properties
+    private let assetsService = AssetsService.shared
+    var userAssets = [AssetSummery]()
+    var userAssetsArrayLength: Int {
+        get {
+            userAssets.count
+        }
+    }
+    
     //MARK: - Init
     init() {
         displayedCurrencies = currencyService.currencies
+        userAssets = assetsService.userAssets
     }
     
     //MARK: - Methods
